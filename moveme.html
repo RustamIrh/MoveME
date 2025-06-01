@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MoveMe - Professional Moving Services</title>
+    <link rel="stylesheet" href="moveme-styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navigation Menu -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <a href="#home">MoveMe</a>
+        </div>
+        <div class="nav-menu" id="nav-menu">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#services" class="nav-link">Services</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <div class="hamburger" id="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">Professional Moving Services</h1>
+        <p class="hero-subtitle">
+          We provide reliable and affordable moving solutions for your local and long-distance relocations
+        </p>
+        <button class="cta-button" onclick="scrollToContact()">Get Free Quote</button>
+        <div class="hero-image">
+          <img
+            src="https://via.placeholder.com/500x300/2c5aa0/ffffff?text=Moving+Truck"
+            alt="Moving Services"
+            id="hero-img"
+          />
+          <button class="image-swap-btn" onclick="swapImage()">View Gallery</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+      <div class="container">
+        <h2>Our Moving Services</h2>
+        <div class="services-grid">
+          <div class="service-item">
+            <h3>Local Moving</h3>
+            <p>Professional local moving services within the city and surrounding areas</p>
+            <ul>
+              <li>Residential moves</li>
+              <li>Apartment relocations</li>
+              <li>Same-day service available</li>
+            </ul>
+          </div>
+          <div class="service-item">
+            <h3>Long Distance Moving</h3>
+            <p>Reliable long-distance moving across states with full insurance coverage</p>
+            <ul>
+              <li>Interstate moves</li>
+              <li>Cross-country relocations</li>
+              <li>Tracking available</li>
+            </ul>
+          </div>
+          <div class="service-item">
+            <h3>Packing Services</h3>
+            <p>Professional packing and unpacking services to protect your belongings</p>
+            <ul>
+              <li>Full packing service</li>
+              <li>Fragile item protection</li>
+              <li>Packing supplies included</li>
+            </ul>
+          </div>
+          <div class="service-item">
+            <h3>Storage Solutions</h3>
+            <p>Secure storage facilities for short-term and long-term needs</p>
+            <ul>
+              <li>Climate-controlled units</li>
+              <li>24/7 security</li>
+              <li>Flexible rental terms</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2>About MoveMe</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              MoveMe is a full-service moving company that has been serving customers for over 10 years. We provide
+              competitive moving rates to give you the best quality and value for your relocation needs.
+            </p>
+            <p>
+              Our experienced team handles everything from packing and moving to storage solutions for both local and
+              long-distance transfers. We serve the entire metropolitan area and beyond.
+            </p>
+
+            <h3>Why Choose MoveMe?</h3>
+            <table class="features-table">
+              <thead>
+                <tr>
+                  <th>Feature</th>
+                  <th>Benefit</th>
+                  <th>Included</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Licensed & Insured</td>
+                  <td>Full protection for your belongings</td>
+                  <td>✓</td>
+                </tr>
+                <tr>
+                  <td>Free Estimates</td>
+                  <td>No hidden fees or surprises</td>
+                  <td>✓</td>
+                </tr>
+                <tr>
+                  <td>Professional Team</td>
+                  <td>Trained and experienced movers</td>
+                  <td>✓</td>
+                </tr>
+                <tr>
+                  <td>24/7 Support</td>
+                  <td>Customer service when you need it</td>
+                  <td>✓</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Get Your Free Moving Quote</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Contact Information</h3>
+            <div class="contact-item"><strong>Phone:</strong> (555) 123-MOVE</div>
+            <div class="contact-item"><strong>Email:</strong> info@moveme.com</div>
+            <div class="contact-item"><strong>Address:</strong> 123 Moving Street, City, State 12345</div>
+            <div class="contact-item"><strong>Hours:</strong> Mon-Sat 8AM-6PM, Sun 10AM-4PM</div>
+          </div>
+
+          <div class="contact-form">
+            <h3>Request a Quote</h3>
+            <form id="quote-form">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" required />
+              </div>
+
+              <div class="form-group">
+                <label for="move-type">Type of Move *</label>
+                <select id="move-type" name="move-type" required>
+                  <option value="">Select move type</option>
+                  <option value="local">Local Move</option>
+                  <option value="long-distance">Long Distance</option>
+                  <option value="commercial">Commercial Move</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="move-date">Preferred Move Date</label>
+                <input type="date" id="move-date" name="move-date" />
+              </div>
+
+              <div class="form-group">
+                <label for="message">Additional Details</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  placeholder="Tell us about your moving needs..."
+                ></textarea>
+              </div>
+
+              <button type="submit" class="submit-btn">Get Free Quote</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>MoveMe</h3>
+            <p>Your trusted moving partner for over 10 years. Licensed, insured, and committed to excellence.</p>
+          </div>
+          <div class="footer-section">
+            <h3>Services</h3>
+            <ul>
+              <li>Local Moving</li>
+              <li>Long Distance Moving</li>
+              <li>Packing Services</li>
+              <li>Storage Solutions</li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Contact</h3>
+            <p>Phone: (555) 123-MOVE</p>
+            <p>Email: info@moveme.com</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; <span id="current-year"></span> MoveMe. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="moveme-script.js"></script>
+  </body>
+</html>
